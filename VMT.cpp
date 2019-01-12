@@ -11,7 +11,7 @@ auto VMTHook::SetVMT(void* ptr) -> bool
 {
 		if (!ptr) return false;
 
-		m_pClass		= ptr;
+		m_pClass	= ptr;
 		m_pOriginalVMT	= *reinterpret_cast<uint32_t**>(ptr);
 
 		m_iVMTSize = 0;
