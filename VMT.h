@@ -29,8 +29,8 @@ public:
 
 private:
 
-	virtual auto HookFunction(uint32_t index, void* hkFunction) -> void*;
-	virtual auto SetVMT(void*)							-> bool;
+	virtual auto HookFunction(uint32_t index, void* hkFunction)	-> void*;
+	virtual auto SetVMT(void*)	-> bool;
 
 	void*		m_pClass;
 	size_t		m_iVMTSize;
