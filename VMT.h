@@ -7,13 +7,14 @@ class VMTHook
 public:
 	
 	VMTHook()	= default;
-	~VMTHook() = default;
+	~VMTHook()  = default;
 
 	VMTHook(void* ptr);
 
-	virtual auto UnhookVMT()			-> void;
-	virtual auto RehookVMT()			-> void;
-	virtual auto RestoreOriginalVMT()	-> void;
+	virtual auto UnhookVMT()            -> void;
+	virtual auto RehookVMT()            -> void;
+    
+	virtual auto RestoreOriginalVMT()   -> void;
 
 	template <class T>
 	static VMTHook* Create(T* ptr) {
