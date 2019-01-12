@@ -2,7 +2,7 @@
 
 usage:
 
-Define the new function. Use the call convention of the original function.
+Define the new function and store the original one, care about using the correct call convention.
 
 ```C++
 typedef void(__thiscall *funcA_t)(void*);
