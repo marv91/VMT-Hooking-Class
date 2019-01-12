@@ -6,7 +6,6 @@ class VMTHook
 {
 public:
 
-	VMTHook()		= default;
 	~VMTHook()	= default;
 
 	VMTHook(void* ptr);
@@ -33,7 +32,7 @@ private:
 	virtual auto HookFunction(uint32_t index, void* hkFunction) -> void*;
 	virtual auto SetVMT(void*)									-> bool;
 
-	void*			m_pClass;
+	void*		m_pClass;
 	size_t		m_iVMTSize;
 	uint32_t*	m_pOriginalVMT;
 	uint32_t*	m_pHookedVMT;
