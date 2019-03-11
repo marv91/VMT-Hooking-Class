@@ -1,6 +1,8 @@
 # VMT Hooking Class
+For some basic information about hooking check this out: 
+https://en.wikipedia.org/wiki/Hooking
 
-usage:
+Usage:
 
 Define the new function and store the original one, care about using the correct call convention.
 
